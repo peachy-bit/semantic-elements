@@ -3,9 +3,198 @@
   <head>
     <meta charset="utf-8">
     <title>My Semantic Elements Website</title>
+
+  <style>
+    aside {
+      width: 30%;
+      padding-left: 15px;
+      float: right;
+      font-style: italic;
+      background-color: lightblue;
+    }
+    details > summary {
+      padding: 4px;
+      width: 200px;
+      background-color: #eeefff;
+      border: none;
+      box-shadow: 1px 1px 2px #bbbbbb;
+      cursor:pointer;
+    }
+    details > p {
+      background-color: #eeefff;
+      padding: 4px;
+      margin: 0;
+      box-shadow: 1px 1px 2px #bbbbbb;
+    }
+    figure {
+      border: 1px #cccccc solid;
+      padding: 10px;
+      margin: inherit;
+    }
+    figcaption {
+      background-color: lightblue;
+      color: gray;
+      font-style: italic;
+      padding: 2px;
+      text-align: left;
+    }
+    main {
+      margin: 0;
+      padding: 5px;
+      background-color: lightgray;
+    }
+    main > h1, p, .browser {
+      margin: 10px;
+      padding: 5px;
+    }
+    .browser {
+      background: white;
+    }
+    .browser > h2, p {
+      margin: 4px;
+      font-size: 90%;
+    }
+    mark {
+      background-color: lightgreen;
+      color: black;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
   </head>
+
   <body>
+
+      <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a>
+      </nav>
+
+  <main>
       <h1>Welcome!</h1>
-      <p> everything is fine.</p>
+      <p> This is my first assignment website, focusing on the use of semantic elements.</p>
+
+      <details>
+        <summary>Summary heading for details element</summary>
+        <p>This is a paragraph holder for details interactive widget</p>
+      </details>
+
+      <h1>The section element</h1>
+      <section>
+        <h1>Introduction</h1>
+        <p> Introducing my sweet girls Princess and Leia. They are so much fun yet so much work. Leia loves the water, is ball movtivated, and the sweetest most loving dog.
+          Princess is a counter surfer, loves to chew, pretty crazy, and loves to snuggle.
+        </p>
+
+          <aside>
+            <p>This is an example of an <b>aside element.</b></p>
+          </aside>
+      </section>
+
+      <section>
+          <h1>Content</h1>
+          <p> Featuring a favorite photo of Princess and Leia.</p>
+
+          <figure>
+            <img src="IMG_0031.jpg" alt="Princess" style="width:30%">
+            <figcaption>Fig.1 - Princess, Dalmatian, 3 years old.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="IMG_1709.jpg" alt="Leia" style="width:30%">
+            <figcaption>Fig.2 - Leia, Labrador Retriever, 5 years old.</figcaption>
+          </figure>
+
+      </section>
+
+      <section>
+          <h1>Contact Information</h1>
+          <p> This is where contact details will reside.</p>
+      </section>
+
+      <h1>The article element</h1>
+      <article class="browser">
+        <h2>Article Heading</h2>
+        <p>Article content paragraph.</p>
+      </article>
+
+      <table>
+        <colgroup>
+          <col span="3" style="background-color: lightblue">
+        </colgroup>
+
+        <tr>
+          <th style="width:140px">Basic HTML Tags</th>
+          <th style="width:140px">HTML Tags</th>
+          <th style="width:140px">Semantic Element HTML Tags</th>
+        </tr>
+        <tr>
+          <td>!DOCTYPE</td>
+          <td>a</td>
+          <td>article</td>
+        </tr>
+        <tr>
+          <td>html</td>
+          <td>b</td>
+          <td>aside</td>
+        </tr>
+        <tr>
+          <td>head</td>
+          <td>col</td>
+          <td>details</td>
+        </tr>
+        <tr>
+          <td>title</td>
+          <td>colgroup</td>
+          <td>figcaption</td>
+        <tr>
+          <td>body</td>
+          <td>img</td>
+          <td>figure</td>
+        </tr>
+        <tr>
+          <td>h1 to h2</td>
+          <td>meta</td>
+          <td>footer</td>
+        </tr>
+        <tr>
+          <td>p</td>
+          <td>style</td>
+          <td>header</td>
+        </tr>
+        <tr>
+          <td>br</td>
+          <td>table</td>
+          <td>main</td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td>td</td>
+          <td>mark</tb>
+        <tr>
+          <td> </td>
+          <td>th</td>
+          <td>nav</td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td>thead</td>
+          <td>section</td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td>tr</td>
+          <td>summary</td>
+        </tr>
+      </table>
+
+  </main>
+
+
   </body>
+    <footer>
+      <p><mark>Author:</mark> Janene Smith</p>
+      <p><a href="mailto:janenesmith933@gmail.com">janenesmith933@gmail.com</a></p>
+    </footer>
 </html>
